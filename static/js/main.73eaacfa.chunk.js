@@ -1,0 +1,2 @@
+(this.webpackJsonpecomerce=this.webpackJsonpecomerce||[]).push([[0],{10:function(e,c,n){"use strict";n.r(c);n(0);var r=n(3),t=n.n(r),o=(n(8),n(1)),s=function(){return Object(o.jsx)("div",{children:"App"})};t.a.render(Object(o.jsx)(s,{}),document.querySelector("#root"))},8:function(e,c,n){}},[[10,1,2]]]);
+//# sourceMappingURL=main.73eaacfa.chunk.js.map
