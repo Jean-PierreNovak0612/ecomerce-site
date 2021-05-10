@@ -19,7 +19,7 @@ const SectionSegment = ({textPosition = 'left', image, text="text", header="head
     console.log(image)
 
     return (
-        <div className={`${classes} height position-relative`} style={{ backgroundImage: `url(${image})` }}>
+        <div className={`${classes} mt-5 mt-md-0 height position-relative`} style={{ backgroundImage: `url(${image})` }}>
             {renderText(text, header)}
         </div>
     )
