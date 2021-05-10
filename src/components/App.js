@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Header from './Header';
-import { NAV_LINKS } from '../data'
+import Footer from './Footer';
+import { NAV_LINKS, FOOTER_LINKS, SOCIAL_LINKS } from '../data'
 
 import '../css/style.css';
 
@@ -15,6 +16,7 @@ const App = () => {
                 {/* <Route path="/ecomerce-site/computers" component={ComputerPage} /> */}
                 {/* <Route path="/ecomerce-site/laptops" component={LaptopPage} /> */}
             </Switch>
+            <Footer links={FOOTER_LINKS} social={SOCIAL_LINKS} />
         </Router>
     )
 };

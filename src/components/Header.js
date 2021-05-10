@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-import '../css/Header.css';
-
 const Header = ({ links }) => {
 
     const renderLinks = links.map(link => <Link className="nav-link ps-5 w-100 fw-bold fs-5" key={link.title} to={link.link}>{link.title}</Link>)
