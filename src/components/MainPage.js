@@ -8,8 +8,8 @@ import '../css/MainPage.css'
 const MainPage = () => {
     return (
         <div className="mt-5 pt-5 background">
-            <SectionSegment image={IMG1_URL} textPosition="right" />
-            {/* <SectionSegment image={IMG2_URL} /> */}
+            <SectionSegment image={IMG1_URL} />
+            <SectionSegment image={IMG2_URL} textPosition="right" />
         </div>
     )
 };

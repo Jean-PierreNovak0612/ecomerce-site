@@ -16,6 +16,8 @@ const SectionSegment = ({textPosition = 'left', image, text="text", header="head
         )
     }
 
+    console.log(image)
+
     return (
         <div className={`${classes} height position-relative`} style={{ backgroundImage: `url(${image})` }}>
             {renderText(text, header)}
