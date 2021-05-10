@@ -1,0 +1,15 @@
+.background {
+	background: linear-gradient(
+		90deg,
+		#38434e 0%,
+		#38434e 50%,
+		#fff 50%,
+		#fff 100%
+	);
+}
+
+@media (max-width: 768px) {
+	.background {
+		background: none;
+	}
+}

@@ -42,3 +42,7 @@ export const SOCIAL_LINKS = [
         link: "/ecomerce-site/"
     }
 ]
+
+export const IMG1_URL = `${process.env.PUBLIC_URL}/images/computers/Alienware_Aurora_Ryzen_Edition_R10.png`;
+
+export const IMG2_URL = `${process.env.PUBLIC_URL}/images/laptops/Alienware_Aurora_Ryzen_Edition_R10.png`;

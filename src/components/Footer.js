@@ -5,16 +5,16 @@ const Footer = ({ links = [], social = [] }) => {
 
     const renderLinks = (links) => {
         if(!links) return null;
-        return links.map(link => <Link className="d-block d-lg-inline nav-link text-white fs-5" to={link.link}>{link.title}</Link>);
+        return links.map(link => <Link key={link.title} className="d-block d-lg-inline nav-link text-white fs-5" to={link.link}>{link.title}</Link>);
     }
 
     const renderSocialLinks = (social) => {
         if(!social) return null;
-        return social.map(network => <Link to={network.link} className="nav-link d-inline text-white fs-5"><i className={`bi bi-${network.title}`}></i></Link>)
+        return social.map(network => <Link key={network.title} to={network.link} className="nav-link d-inline text-white fs-5"><i className={`bi bi-${network.title}`}></i></Link>)
     }
 
     return (
-        <footer className="container-fluid navbar-dark bg-dark navbar">
+        <footer className="container-fluid  navbar-dark bg-dark navbar">
             <div className="row w-100 my-0 my-lg-3">
                 <div className="col-12 text-center text-lg-start col-lg-6">
                     {renderLinks(links)}
