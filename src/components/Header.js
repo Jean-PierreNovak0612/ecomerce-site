@@ -8,7 +8,7 @@ const Header = ({ links }) => {
     const renderLinks = links.map(link => <Link className="nav-link ps-5 w-100 fw-bold fs-5" key={link.title} to={link.link}>{link.title}</Link>)
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div className="container-fluid">
                 <Link className="navbar-brand ms-5 fw-bolder fs-2" to="/ecomerce-site/">ShopLogo</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
