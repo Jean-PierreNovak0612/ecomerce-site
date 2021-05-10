@@ -7,7 +7,7 @@ import '../css/MainPage.css'
 
 const MainPage = () => {
     return (
-        <div className="mt-5 pt-5 background">
+        <div className=" background">
             <SectionSegment image={IMG1_URL} />
             <SectionSegment image={IMG2_URL} textPosition="right" />
         </div>

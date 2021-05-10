@@ -1,5 +1,5 @@
 .height {
-	height: 600px;
+	height: 700px;
 }
 
 .width {
@@ -13,7 +13,7 @@
 
 .img-right {
 	background-size: 30%;
-	background-position: 95% 85%;
+	background-position: 95%;
 }
 
 .img-left {
