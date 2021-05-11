@@ -5,7 +5,8 @@ import '../css/SectionSegment.css';
 const SectionSegment = ({textPosition = 'left', image, text="text", header="header"}) => {
 
     const classes = textPosition === 'left' ? 'img-right' : 'img-left';
-    const textClasses = textPosition === 'left' ? 'start-0 color' : 'end-0'
+    const textClasses = textPosition === 'left' ? 'start-0' : 'end-0';
+    const backgroundClass = textPosition === 'left' ? 'gray-left' : 'gray-right';
 
     const renderText = (txt, head) => {
         return (
@@ -16,11 +17,11 @@ const SectionSegment = ({textPosition = 'left', image, text="text", header="head
         )
     }
 
-    console.log(image)
-
     return (
-        <div className={`${classes} mt-5 mt-md-0 height position-relative`} style={{ backgroundImage: `url(${image})` }}>
-            {renderText(text, header)}
+        <div className={`${backgroundClass}`} >
+            <div className={`${classes} height position-relative`} style={{ backgroundImage: `url(${image})` }}>
+                {renderText(text, header)}
+            </div>
         </div>
     )
 };
