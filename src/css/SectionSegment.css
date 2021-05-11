@@ -51,7 +51,7 @@
 	max-width: 60ch;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
 	.height {
 		height: 470px;
 		overflow: none;
