@@ -1,5 +1,5 @@
 .height {
-	height: 60vmax;
+	height: 550px;
 }
 
 .width {
@@ -12,13 +12,13 @@
 }
 
 .img-right {
-	background-size: 30%;
-	background-position: 95%;
+	background-size: 300px;
+	background-position: 90% top;
 }
 
 .img-left {
-	background-size: 50%;
-	background-position: 0 50%;
+	background-size: 500px;
+	background-position: left 60%;
 }
 
 .gray-left {
