@@ -76,8 +76,14 @@
 	}
 }
 
-@media (max-width: 300px) {
+@media (max-width: 340px) {
 	.height {
 		height: 560px;
+	}
+}
+
+@media (max-width: 250px) {
+	.height {
+		height: 650px;
 	}
 }
