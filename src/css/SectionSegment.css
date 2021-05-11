@@ -1,5 +1,5 @@
 .height {
-	height: 50vw;
+	height: 60vmax;
 }
 
 .width {
@@ -41,6 +41,14 @@
 		#38434e 100%
 	);
 	color: #fff;
+}
+
+.btn-width {
+	width: 100px;
+}
+
+.max-width {
+	max-width: 60ch;
 }
 
 @media (max-width: 768px) {

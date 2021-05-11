@@ -13,7 +13,7 @@ const App = () => {
         <Router>
             <Header links={NAV_LINKS} />
             <Switch>
-                <Route path="/ecomerce-site/" component={MainPage} />
+                <Route path="/ecomerce-site/" exact component={MainPage} />
                 {/* <Route path="/ecomerce-site/computers" component={ComputerPage} /> */}
                 {/* <Route path="/ecomerce-site/laptops" component={LaptopPage} /> */}
             </Switch>
