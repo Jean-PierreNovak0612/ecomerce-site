@@ -3,7 +3,7 @@ import axios from 'axios'
 
 import '../css/ShowProductInfo.css'
 
-const ShowProductInfo = ({ selected, database }) => {
+const ShowProductInfo = ({ selected, onBought, database }) => {
 
     const [totalAmountOfProductsToBuy, setTotalAmountOfProductsToBuy] = useState();
     const [decrease, setDecrease] = useState(true);
@@ -28,6 +28,8 @@ const ShowProductInfo = ({ selected, database }) => {
         const response = await axios.patch(`https://my-json-server.typicode.com/jean-pierrenovak0612/ecomerce-server/${server}/${id}`, { amount: (selected.amount - totalAmountOfProductsToBuy)})
 
         console.log(response.data)
+
+        onBought(null);
     }
 
     const increaseAmount = () => {
@@ -62,8 +64,8 @@ const ShowProductInfo = ({ selected, database }) => {
     }
 
     return (
-        <div className="data-width card mx-auto text-center d-block my-3 px-2 px-sm-5">
-            <img src={process.env.PUBLIC_URL + selected.image} className="card-img-top img-width"></img>
+        <div className="data-width card mx-auto text-center d-block my-3 mt-5 mt-sm-3 px-2 px-sm-5">
+            <img src={process.env.PUBLIC_URL + selected.image} alt={selected.title} className="card-img-top img-width"></img>
             <div className="card-body">
                 <h3>{selected.title}</h3>
                 <div className="w-100 mt-5 text-start">

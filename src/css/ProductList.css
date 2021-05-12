@@ -20,3 +20,9 @@
 		height: 450px;
 	}
 }
+
+@media (max-width: 320px) {
+	.img-height {
+		height: 150px;
+	}
+}

@@ -51,7 +51,7 @@ const ProductList = ({ listProducts, onProductSelect, selected}) => {
     }
 
     return (
-        <div className="text-center">
+        <div className="text-center mt-5 mt-sm-0">
             {renderContent()}
         </div>
     )

@@ -11,7 +11,7 @@ const DisplayProducts = ({ term }) => {
 
     const renderProduct = () =>{
         if(!selectedProduct) return null;
-        return <ShowProductInfo selected={selectedProduct} database={term} />
+        return <ShowProductInfo selected={selectedProduct} onBought={setSelectedProduct} database={term} />
     }
     
     return (
