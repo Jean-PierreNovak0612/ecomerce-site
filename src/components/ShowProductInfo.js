@@ -3,7 +3,7 @@ import axios from 'axios'
 
 import '../css/ShowProductInfo.css'
 
-const ShowProductInfo = ({ selected, onBought, database }) => {
+const ShowProductInfo = ({ selected, onBought, onSuccess, database }) => {
 
     const [totalAmountOfProductsToBuy, setTotalAmountOfProductsToBuy] = useState();
     const [decrease, setDecrease] = useState(true);
@@ -30,6 +30,8 @@ const ShowProductInfo = ({ selected, onBought, database }) => {
         console.log(response.data)
 
         onBought(null);
+        onSuccess(true);
+        setTimeout(() => onSuccess(false), 2000);
     }
 
     const increaseAmount = () => {
