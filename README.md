@@ -4,6 +4,9 @@ This page is a little e-comerce platform which uses the JSON RESTFUL API as its 
 
 This page is fully responsive and available on all platforms.
 
+The backend server can be found:
+* [here](https://github.com/Jean-PierreNovak0612/ecomerce-server)
+
 You can find the working version of this page:
 * [here](https://jean-pierrenovak0612.github.io/ecomerce-site/#/ecomerce-site/ecomerce-site/)
 
