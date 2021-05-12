@@ -1,11 +1,19 @@
 .width {
-	width: 400px;
+	width: 90%;
+	max-width: 400px;
 }
 
 .height {
-	height: 470px;
+	min-height: 200px;
+	max-height: 470px;
 }
 
 .img-height {
 	height: 50%;
+}
+
+@media (max-width: 470px) {
+	.height {
+		height: 50%;
+	}
 }

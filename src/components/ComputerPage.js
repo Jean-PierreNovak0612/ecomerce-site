@@ -8,8 +8,6 @@ const ComputerPage = () => {
     const [selectedProduct, setSelectedProduct] = useState(null);
     const [productList] = useProductList('computers');
 
-    console.log(selectedProduct);
-
     const renderProduct = () =>{
         if(!selectedProduct) return null;
     }
