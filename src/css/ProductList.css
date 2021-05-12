@@ -1,9 +1,9 @@
-.width {
+.cardWidth {
 	width: 90%;
 	max-width: 400px;
 }
 
-.height {
+.cardHeight {
 	min-height: 200px;
 	max-height: 470px;
 }
@@ -13,7 +13,7 @@
 }
 
 @media (max-width: 470px) {
-	.height {
+	.cardHeight {
 		height: 50%;
 	}
 }

@@ -4,7 +4,7 @@ import '../css/ProductList.css';
 
 const ProductList = ({ listProducts, onProductSelect}) => {
 
-    const [cardWidth, setCardWidth] = useState('width height');
+    const [cardWidth, setCardWidth] = useState('cardWidth cardhHeight');
 
     const renderButton = (prod) => {
         if(!prod.amount) return <button onClick={() => onProductSelect(prod)} className="btn btn-danger">Check it out</button>
