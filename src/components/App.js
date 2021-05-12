@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Header from './Header';
 import Footer from './Footer';
@@ -11,7 +11,7 @@ import '../css/style.css';
 
 const App = () => {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Header links={NAV_LINKS} />
             <Switch>
                 <Route path="/ecomerce-site/" exact component={MainPage} />
