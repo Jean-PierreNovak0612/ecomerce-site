@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../css/ProductList.css';
 
-const ProductList = ({ listProducts, onProductSelect}) => {
+const ProductList = ({ listProducts, onProductSelect, selected}) => {
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -32,6 +32,9 @@ const ProductList = ({ listProducts, onProductSelect}) => {
 
         return listProducts.map(product => {
             const imgUrl = process.env.PUBLIC_URL + product.image;
+            if(selected){
+                if(selected.id === product.id) return null;
+            }
             return (
                 <div className={`cardWidth cardHeight card text-start d-md-inline-block mx-md-3 my-3 mx-auto`} key={product.id}>
                     <img src={imgUrl} alt="computer" className="card-img-top img-height"></img>
@@ -39,7 +42,7 @@ const ProductList = ({ listProducts, onProductSelect}) => {
                         <h5>{product.title}</h5>
                         <p>Available: {renderAvailable(product.amount)}</p>
                         <p>Amount: {product.amount}</p>
-                        <p>Price: {product.price}</p>
+                        <p>Price: ${product.price}</p>
                         {renderButton(product)}
                     </div>
                 </div>

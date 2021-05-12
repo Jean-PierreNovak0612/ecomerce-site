@@ -1,0 +1,14 @@
+.data-width {
+	width: 90%;
+	max-width: 1250px;
+}
+
+.img-width {
+	width: 50%;
+}
+
+@media (max-width: 470px) {
+	.img-width {
+		width: 100%;
+	}
+}

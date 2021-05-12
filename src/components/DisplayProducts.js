@@ -2,22 +2,24 @@ import React, { useState } from 'react';
 
 import ProductList from './ProductList';
 import useProductList from '../hooks/useProductList'
+import ShowProductInfo from './ShowProductInfo';
 
-const ComputerPage = () => {
+const DisplayProducts = ({ term }) => {
 
     const [selectedProduct, setSelectedProduct] = useState(null);
-    const [productList] = useProductList('computers');
+    const [productList] = useProductList(term);
 
     const renderProduct = () =>{
         if(!selectedProduct) return null;
+        return <ShowProductInfo selected={selectedProduct} database={term} />
     }
     
     return (
         <div className="pt-5 mt-4">
             {renderProduct()}
-            <ProductList listProducts={productList} onProductSelect={setSelectedProduct} />
+            <ProductList listProducts={productList} onProductSelect={setSelectedProduct} selected={selectedProduct} />
         </div>
     )
 };
 
-export default ComputerPage;
+export default DisplayProducts;
