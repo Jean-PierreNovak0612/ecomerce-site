@@ -32,6 +32,10 @@ const ShowProductInfo = ({ selected, onBought, onSuccess, database }) => {
         onBought(null);
         onSuccess(true);
         setTimeout(() => onSuccess(false), 2000);
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     }
 
     const increaseAmount = () => {
