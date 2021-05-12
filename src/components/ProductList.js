@@ -22,7 +22,7 @@ const ProductList = ({ listProducts, onProductSelect}) => {
         return listProducts.map(product => {
             const imgUrl = process.env.PUBLIC_URL + product.image;
             return (
-                <div className={`${cardWidth} card text-start d-lg-inline-block mx-lg-3 my-3 mx-auto`} key={product.id}>
+                <div className={`${cardWidth} card text-start d-md-inline-block mx-md-3 my-3 mx-auto`} key={product.id}>
                     <img src={imgUrl} alt="computer" className="card-img-top img-height"></img>
                     <div className="card-body">
                         <h5>{product.title}</h5>
