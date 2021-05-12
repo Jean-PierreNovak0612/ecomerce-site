@@ -4,8 +4,6 @@ import '../css/ProductList.css';
 
 const ProductList = ({ listProducts, onProductSelect}) => {
 
-    const [cardWidth, setCardWidth] = useState('cardWidth cardhHeight');
-
     const renderButton = (prod) => {
         if(!prod.amount) return <button onClick={() => onProductSelect(prod)} className="btn btn-danger">Check it out</button>
         return <button onClick={() => onProductSelect(prod)} className="btn btn-success">Check it out </button>
@@ -22,7 +20,7 @@ const ProductList = ({ listProducts, onProductSelect}) => {
         return listProducts.map(product => {
             const imgUrl = process.env.PUBLIC_URL + product.image;
             return (
-                <div className={`${cardWidth} card text-start d-md-inline-block mx-md-3 my-3 mx-auto`} key={product.id}>
+                <div className={`cardWidth cardHeight card text-start d-md-inline-block mx-md-3 my-3 mx-auto`} key={product.id}>
                     <img src={imgUrl} alt="computer" className="card-img-top img-height"></img>
                     <div className="card-body">
                         <h5>{product.title}</h5>

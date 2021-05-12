@@ -4,16 +4,19 @@
 }
 
 .cardHeight {
-	min-height: 200px;
-	max-height: 470px;
+	height: 470px;
 }
 
 .img-height {
-	height: 50%;
+	height: 250px;
 }
 
 @media (max-width: 470px) {
+	.img-height {
+		height: 170px;
+	}
+
 	.cardHeight {
-		height: 50%;
+		height: 400px;
 	}
 }
