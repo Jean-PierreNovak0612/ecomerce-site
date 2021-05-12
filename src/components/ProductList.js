@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import '../css/ProductList.css';
 
 const ProductList = ({ listProducts, onProductSelect}) => {
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
+    const onClick = (prod) => {
+        onProductSelect(prod);
+
+        scrollToTop();
+    }
+
     const renderButton = (prod) => {
-        if(!prod.amount) return <button onClick={() => onProductSelect(prod)} className="btn btn-danger">Check it out</button>
-        return <button onClick={() => onProductSelect(prod)} className="btn btn-success">Check it out </button>
+        if(!prod.amount) return <button onClick={() => onClick(prod)} className="btn btn-danger">Check it out</button>
+        return <button onClick={() => onClick(prod)} className="btn btn-success">Check it out </button>
     }
 
     const renderAvailable = (amount) => {
