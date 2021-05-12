@@ -1,5 +1,7 @@
 import products from '../api/fetchProducts';
 
+import { FETCH_PRODUCT, REDUCE_AMOUNT } from './types';
+
 export const fetchProducts = (link) => async (dispatch) => {
     const response = await products.get(link);
 
