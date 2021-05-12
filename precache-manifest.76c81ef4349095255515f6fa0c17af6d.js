@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "eca2275448fb4b44f0d3",
-    "url": "/ecomerce-site/static/css/main.8524afe5.chunk.css"
+    "revision": "1fdace5e37d3cc59bd68",
+    "url": "/ecomerce-site/static/css/main.801fd5d7.chunk.css"
   },
   {
-    "revision": "eca2275448fb4b44f0d3",
-    "url": "/ecomerce-site/static/js/main.c8838f05.chunk.js"
+    "revision": "1fdace5e37d3cc59bd68",
+    "url": "/ecomerce-site/static/js/main.a4610f9d.chunk.js"
   },
   {
     "revision": "1e2930d72bd9bd511643",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/ecomerce-site/static/js/2.f951f179.chunk.js"
   },
   {
-    "revision": "358f256c64fe76ce66b77315c7e8fe8d",
+    "revision": "24989a54a12e9e150bd39353f83df1a2",
     "url": "/ecomerce-site/index.html"
   }
 ];
