@@ -1,2 +1,0 @@
-export const FETCH_PRODUCT = 'FETCH_PRODUCT';
-export const REDUCE_AMOUNT = 'REDUCE_AMOUNT';
