@@ -1,5 +1,5 @@
 {
-  "main.css": "/ecomerce-site/static/css/main.9c286c23.chunk.css",
+  "main.css": "/ecomerce-site/static/css/main.bb5d33d5.chunk.css",
   "main.js": "/ecomerce-site/static/js/main.cf016f7a.chunk.js",
   "main.js.map": "/ecomerce-site/static/js/main.cf016f7a.chunk.js.map",
   "runtime~main.js": "/ecomerce-site/static/js/runtime~main.64446f8d.js",
@@ -7,7 +7,7 @@
   "static/js/2.05680216.chunk.js": "/ecomerce-site/static/js/2.05680216.chunk.js",
   "static/js/2.05680216.chunk.js.map": "/ecomerce-site/static/js/2.05680216.chunk.js.map",
   "index.html": "/ecomerce-site/index.html",
-  "precache-manifest.6454a0202694faa605a095195998e48f.js": "/ecomerce-site/precache-manifest.6454a0202694faa605a095195998e48f.js",
+  "precache-manifest.7292b091db07aa1234e31b9a015868f9.js": "/ecomerce-site/precache-manifest.7292b091db07aa1234e31b9a015868f9.js",
   "service-worker.js": "/ecomerce-site/service-worker.js",
-  "static/css/main.9c286c23.chunk.css.map": "/ecomerce-site/static/css/main.9c286c23.chunk.css.map"
+  "static/css/main.bb5d33d5.chunk.css.map": "/ecomerce-site/static/css/main.bb5d33d5.chunk.css.map"
 }
