@@ -15,7 +15,7 @@ const useProductList = (term) => {
         setProducts(response.data)
     };
 
-    return [products, fetch];
+    return [products];
 }
 
 export default useProductList;
